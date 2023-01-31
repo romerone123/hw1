@@ -27,15 +27,16 @@ if(in == nullptr)
   if(in->value % 2 != 0)
   {
     odds = in;
-		in = in->next;
+    in = in->next;
     split(in, odds->next, evens);
   }
   else if(in->value % 2 == 0)
   {
     evens = in;
-		in = in->next;
+    in = in->next;
     split(in, odds, evens->next);
   }
 }
+
 
 /* If you needed a helper function, write it here */
